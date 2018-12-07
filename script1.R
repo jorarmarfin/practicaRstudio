@@ -22,7 +22,7 @@ class(tbl1)
 write.csv(tbl1,"export/tbl1.csv",sep = ";")
 
 #Concetar a Base de Datos
-install.packages("RMariaDB")
+install.packages("RODBC")
 #hay que instalar libmariadbclient-dev | libmariadb-client-lgpl-dev (Debian, Ubuntu)
 #rpm: mariadb-connector-c-devel | mariadb-devel | mysql-devel (Fedora, CentOS, RHEL)
 library(RMariaDB)
